@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Coolest Place | Gaming Setup Gear</title>
+<meta name="description" content="The Coolest Place — gaming accessories and desk setup essentials.">
+<style>
+:root{--bg:#080b13;--panel:#121827;--panel2:#1a2235;--text:#f6f7ff;--muted:#aab3c8;--purple:#9b7cff;--cyan:#61e6d2;--line:#2b3550}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0%,#302054 0,transparent 32%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{width:min(1120px,92%);margin:auto}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:5;background:#080b13ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:1.12rem;font-weight:950;letter-spacing:-.6px}.logo span{color:var(--purple)}.links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.cart{background:var(--panel);border:1px solid var(--line);color:white;padding:10px 14px;border-radius:11px;cursor:pointer}
+.hero{padding:78px 0 68px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.eyebrow{color:var(--cyan);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:850}
+h1{font-size:clamp(2.8rem,6vw,5.1rem);line-height:.98;letter-spacing:-3px;margin:15px 0 18px}.intro{color:var(--muted);font-size:1.06rem;line-height:1.7;max-width:550px}
+.btn{display:inline-block;background:linear-gradient(110deg,var(--purple),#658bff);color:white;border:0;border-radius:12px;padding:14px 20px;font-weight:850;margin-top:12px;cursor:pointer}
+.hero-art{min-height:320px;border:1px solid #554783;border-radius:26px;background:linear-gradient(145deg,#292044,#111a2c);display:grid;place-items:center;overflow:hidden}.orb{width:220px;height:220px;border:1px solid #a58cff;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 80px #9b7cff44}.gamepad{font-size:6rem;filter:drop-shadow(0 15px 20px #0009)}
+section{padding:38px 0 58px}.sectionhead{margin-bottom:22px}h2{font-size:2rem;letter-spacing:-1px;margin:7px 0}.muted{color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.product{border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden}.art{height:175px;display:grid;place-items:center;background:linear-gradient(145deg,#222c45,#171b2c);font-size:4.4rem}.info{padding:17px}.tag{font-size:.7rem;color:var(--cyan);font-weight:850;letter-spacing:1px;text-transform:uppercase}.info h3{margin:8px 0}.info p{font-size:.9rem;line-height:1.5;color:var(--muted);min-height:42px}.buy{display:flex;justify-content:space-between;align-items:center;margin-top:15px}.price{font-weight:900}.add{background:#282143;border:1px solid #594b83;border-radius:10px;color:white;padding:10px 12px;font-weight:750;cursor:pointer}
+.notice{border:1px solid #594b83;background:#19172a;color:#ded7fa;border-radius:13px;padding:15px 17px;line-height:1.55;font-size:.9rem;margin-top:22px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:19px}.feature b{display:block;margin:7px 0}.feature p{color:var(--muted);font-size:.9rem;line-height:1.5;margin:0}
+footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:.87rem}
+#cartbox{display:none;position:fixed;right:16px;top:83px;z-index:8;width:min(350px,calc(100vw - 32px));padding:17px;background:var(--panel);border:1px solid var(--line);border-radius:15px;box-shadow:0 20px 55px #000a}#cartbox.show{display:block}.line{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+@media(max-width:740px){.hero{grid-template-columns:1fr;padding-top:52px}.hero-art{min-height:230px}.products{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.links{display:none}}
+@media(max-width:480px){.products{grid-template-columns:1fr}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><a class="logo" href="#">THE COOLEST <span>PLACE</span></a><div class="links"><a href="#shop">Shop</a><a href="#about">About</a><a href="#policies">Store info</a></div><button class="cart" id="toggle">Cart (<span id="count">0</span>)</button></nav></header>
+<main>
+<div class="wrap hero"><div><div class="eyebrow">Your setup starts here</div><h1>FIND YOUR<br>NEXT UPGRADE</h1><p class="intro">Gaming accessories and desk essentials for building a setup that feels like yours. Welcome to The Coolest Place.</p><a class="btn" href="#shop">Explore the collection</a></div><div class="hero-art"><div class="orb"><div class="gamepad">🎮</div></div></div></div>
+<section class="wrap" id="shop"><div class="sectionhead"><div class="eyebrow">The collection</div><h2>Setup essentials</h2><p class="muted">A starter collection you can edit with real supplier products.</p></div>
+<div class="products">
+<article class="product"><div class="art">🖱️</div><div class="info"><span class="tag">Desk gear</span><h3>Gaming Mouse</h3><p>A gaming mouse listing concept for your desk setup.</p><div class="buy"><span class="price">$24.99</span><button class="add" data-name="Gaming Mouse" data-price="24.99">Add to cart</button></div></div></article>
+<article class="product"><div class="art">⌨️</div><div class="info"><span class="tag">Keyboard</span><h3>Compact RGB Keyboard</h3><p>A compact keyboard concept with a clean look.</p><div class="buy"><span class="price">$39.99</span><button class="add" data-name="Compact RGB Keyboard" data-price="39.99">Add to cart</button></div></div></article>
+<article class="product"><div class="art">🎧</div><div class="info"><span class="tag">Organization</span><h3>Headset Stand</h3><p>Keep your headset neatly stored between games.</p><div class="buy"><span class="price">$14.99</span><button class="add" data-name="Headset Stand" data-price="14.99">Add to cart</button></div></div></article>
+<article class="product"><div class="art">🟪</div><div class="info"><span class="tag">Mousepads</span><h3>Extended Desk Mat</h3><p>A wide mat concept to bring your setup together.</p><div class="buy"><span class="price">$19.99</span><button class="add" data-name="Extended Desk Mat" data-price="19.99">Add to cart</button></div></div></article>
+<article class="product"><div class="art">🎮</div><div class="info"><span class="tag">Console gear</span><h3>Controller Stand</h3><p>A simple stand concept for displaying your controller.</p><div class="buy"><span class="price">$12.99</span><button class="add" data-name="Controller Stand" data-price="12.99">Add to cart</button></div></div></article>
+<article class="product"><div class="art">🔌</div><div class="info"><span class="tag">Cable care</span><h3>Cable Organizer Kit</h3><p>Help keep loose cables tidy around your desk.</p><div class="buy"><span class="price">$9.99</span><button class="add" data-name="Cable Organizer Kit" data-price="9.99">Add to cart</button></div></div></article>
+</div>
+<div class="notice"><b>Preview store:</b> Products and prices shown are examples only. They are not verified supplier listings. Confirm supplier stock, shipping costs, delivery estimates and return terms before selling.</div>
+</section>
+<section class="wrap" id="about"><div class="eyebrow">Why shop here</div><h2>Made for setup upgrades</h2><div class="features"><div class="feature"><b>Gaming essentials</b><p>Accessories for PC, console and desk setups.</p></div><div class="feature"><b>Honest product details</b><p>Publish accurate specs, delivery estimates and return information.</p></div><div class="feature"><b>Customer support</b><p>Add a real contact email and support hours before launch.</p></div></div></section>
+<section class="wrap" id="policies"><div class="eyebrow">Store information</div><h2>Coming before launch</h2><p class="muted">Shipping policy · Returns policy · Privacy policy · Contact details</p><div class="notice">Checkout is not connected. The cart is a demo only and does not accept payment or send orders to suppliers. Ask a parent or guardian to help with business, payment and seller accounts.</div></section>
+</main>
+<footer><div class="wrap">© 2026 The Coolest Place · Gaming accessories and setup gear</div></footer>
+<aside id="cartbox"><div style="display:flex;justify-content:space-between;align-items:center"><b>Your cart</b><button class="add" id="close">Close</button></div><div id="items" class="muted" style="margin-top:12px">Your cart is empty.</div><p id="total"><b>Total: $0.00</b></p><small class="muted">Demo cart only. Checkout is not active.</small></aside>
+<script>
+const cart=[];const box=document.getElementById('cartbox');
+function draw(){document.getElementById('count').textContent=cart.length;document.getElementById('items').innerHTML=cart.length?cart.map((p,i)=>`<div class="line"><span>${p.name}</span><span>$${p.price.toFixed(2)} <button onclick="removeProduct(${i})" aria-label="Remove item">×</button></span></div>`).join(''):'Your cart is empty.';document.getElementById('total').innerHTML='<b>Total: $'+cart.reduce((s,p)=>s+p.price,0).toFixed(2)+'</b>'}
+function removeProduct(i){cart.splice(i,1);draw()}
+document.querySelectorAll('[data-name]').forEach(b=>b.addEventListener('click',()=>{cart.push({name:b.dataset.name,price:Number(b.dataset.price)});draw();box.classList.add('show')}));
+document.getElementById('toggle').onclick=()=>box.classList.toggle('show');document.getElementById('close').onclick=()=>box.classList.remove('show');
+</script>
+</body></html>
